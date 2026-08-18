@@ -114,6 +114,7 @@
 }
 .task {
     background-color: #06b6d4;
+    overflow-wrap: anywhere;
     padding: 12px;
     margin-bottom: 10px;
     border-radius: 6px;
