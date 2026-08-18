@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* body {
+    min-height: 100vh;
+    background-color: #284a6d;
+} */
+
+
+.board {
+    min-height: 100vh;
+
+    padding: 30px;
+
+    background-image: url("https://images.unsplash.com/photo-1786517899271-8d8443b07bcb?w=1200&auto=format&fit=crop&q=80");
+
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.board h1 {
+    text-align: center;
+
+    color: white;
+
+    margin-bottom: 25px;
+}
+
+
+#todo-form {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-bottom: 30px;
+}
+
+
+#todo-input {
+    width: 300px;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    outline: none;
+
+    font-size: 15px;
+}
+
+
+#todo-form button {
+    padding: 12px 18px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background-color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.forms {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.list{
+    width: 280px;
+    min-height: 400px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba(255, 162, 162, 0.85);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+/* .list2 {
+    width: 280px;
+    min-height: 400px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba(169, 161, 161, 0.85);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.list3 {
+    width: 280px;
+    min-height: 400px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba(227, 93, 93, 0.85);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+} */
+
+.heading {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.task {
+    background-color: #06b6d4;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    color: black;
+    font-size: 14px;
+    cursor: grab;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* user-select: none; */
+}
+.task:active {
+    cursor: grabbing;
+}
+
+
+.task.dragging {
+    opacity: 0.5;
+}
+
+
+@media (max-width: 650px) {
+
+    .board {
+        padding: 20px;
+    }
+
+    #todo-form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #todo-input {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .list {
+        width: 100%;
+        max-width: 350px;
+    }
+
+}
