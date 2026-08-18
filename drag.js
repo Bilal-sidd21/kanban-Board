@@ -49,6 +49,7 @@ function createTask(taskText, listIndex) {
   let deleteButton = document.createElement("button");
 
   deleteButton.textContent = "Delete";
+  deleteButton.style.whiteSpace = "nowrap";
 
   deleteButton.style.marginLeft = "auto";
 
